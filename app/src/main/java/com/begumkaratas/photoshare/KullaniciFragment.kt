@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.begumkaratas.photoshare.databinding.FragmentKullaniciBinding
 import java.sql.DriverManager.println
 
@@ -27,15 +28,18 @@ class KullaniciFragment : Fragment() {
             kayitOl(it)
         }
         binding.girisButton.setOnClickListener {
-            giris(it)
+            giris()
         }
     }
 
-    fun kayitOl(view: View) {
-        println("kayıt ol tıklandı")
+    private fun kayitOl(view: View) {
+
+        val action=KullaniciFragmentDirections.actionKullaniciFragmentToGirisFragment()
+        Navigation.findNavController(view).navigate(action)
+
     }
 
-    fun giris(view: View) {
+   private fun giris() {
         println("giriş yapıldı")
     }
 

@@ -9,7 +9,12 @@
         android:id="@+id/kullaniciFragment"
         android:name="com.begumkaratas.photoshare.KullaniciFragment"
         android:label="fragment_kullanici"
-        tools:layout="@layout/fragment_kullanici" />
+        tools:layout="@layout/fragment_kullanici">
+    <action
+        android:id="@+id/action_kullaniciFragment_to_girisFragment"
+        app:destination="@id/kullaniciFragment" />
+    </fragment>
+
     <fragment
         android:id="@+id/feedFragment"
         android:name="com.begumkaratas.photoshare.FeedFragment"
