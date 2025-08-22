@@ -13,6 +13,10 @@
         <action
             android:id="@+id/action_kullaniciFragment_to_girisFragment"
             app:destination="@id/feedFragment" />
+
+        <action
+            android:id="@+id/action_kullaniciFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
     </fragment>
     <fragment
         android:id="@+id/feedFragment"
@@ -22,6 +26,9 @@
         <action
             android:id="@+id/action_feedFragment_to_kullaniciFragment"
             app:destination="@id/kullaniciFragment" />
+        <action
+            android:id="@+id/action_feedFragment_to_uploadFragment"
+            app:destination="@id/uploadFragment" />
     </fragment>
     <fragment
         android:id="@+id/uploadFragment"
