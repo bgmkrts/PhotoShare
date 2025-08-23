@@ -37,6 +37,8 @@
         tools:layout="@layout/fragment_upload" >
         <action
             android:id="@+id/action_uploadFragment_to_feedFragment"
-            app:destination="@id/feedFragment" />
+            app:destination="@id/feedFragment"/>
+
+
     </fragment>
 </navigation>
